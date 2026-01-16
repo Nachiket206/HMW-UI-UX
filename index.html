@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMW Questions & Problem Statement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            background: linear-gradient(-45deg, #000000, #1a1a1a, #0f172a, #000000);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white;
+            min-height: 100vh;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border: 1px solid rgba(99, 102, 241, 0.4);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .gradient-border-box {
+            position: relative;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 1.5rem;
+            overflow: hidden;
+        }
+
+        .gradient-border-box::before {
+            content: "";
+            position: absolute;
+            inset: -2px;
+            z-index: -1;
+            background: linear-gradient(to right, #6366f1, #a855f7, #ec4899);
+            border-radius: 1.6rem;
+            opacity: 0.8;
+        }
+
+        .answer-box {
+            background: rgba(99, 102, 241, 0.1);
+            border-left: 4px solid #6366f1;
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <div class="max-w-4xl mx-auto space-y-12">
+        <!-- Header -->
+        <div class="text-center space-y-4">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">HMW Questions & Problem Statement</h1>
+            <div class="w-24 h-1 bg-indigo-500 mx-auto rounded-full"></div>
+        </div>
+
+        <!-- HMW Questions Section -->
+        <div class="space-y-6">
+            <h3 class="text-xl font-bold flex items-center gap-3 text-indigo-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                How Might We Questions
+            </h3>
+
+            <!-- Question 1 -->
+            <div class="glass-card p-6 rounded-2xl shadow-2xl">
+                <span class="text-xs font-black text-indigo-400 uppercase tracking-widest">Question 01</span>
+                <p class="text-xl font-semibold text-white mt-2 mb-4 leading-snug">
+                    How might we improve in-store navigation in Reliance Mart and Decathlon so that customers can locate products quickly and move through the store with ease?
+                </p>
+                <div class="answer-box p-4 rounded-xl">
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        <strong class="text-indigo-200 uppercase text-xs block mb-1">Strategic Approach</strong> 
+                        By understanding user movement patterns and navigation pain points, the experience can be improved through clearer wayfinding, intuitive store layouts, and better visibility of product categories.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="glass-card p-6 rounded-2xl shadow-2xl">
+                <span class="text-xs font-black text-indigo-400 uppercase tracking-widest">Question 02</span>
+                <p class="text-xl font-semibold text-white mt-2 mb-4 leading-snug">
+                    How might we help customers make confident purchase decisions by simplifying product information and comparisons inside the store?
+                </p>
+                <div class="answer-box p-4 rounded-xl">
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        <strong class="text-indigo-200 uppercase text-xs block mb-1">Strategic Approach</strong> 
+                        Providing clear, easy-to-understand product details and value cues can support users in evaluating options efficiently, reducing cognitive load and uncertainty during product selection.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="glass-card p-6 rounded-2xl shadow-2xl">
+                <span class="text-xs font-black text-indigo-400 uppercase tracking-widest">Question 03</span>
+                <p class="text-xl font-semibold text-white mt-2 mb-4 leading-snug">
+                    How might we minimize waiting time and frustration during checkout while ensuring a smooth and reliable payment experience?
+                </p>
+                <div class="answer-box p-4 rounded-xl">
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        <strong class="text-indigo-200 uppercase text-xs block mb-1">Strategic Approach</strong> 
+                        By addressing queue management and payment flow inefficiencies, the checkout experience can become faster and less stressful, especially during peak shopping hours.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Problem Statement Section -->
+        <div class="pt-10">
+            <div class="gradient-border-box p-10 text-center space-y-6 shadow-2xl">
+                <h3 class="text-xs font-black text-indigo-400 uppercase tracking-[0.3em]">Final Problem Statement</h3>
+                <p class="text-2xl md:text-3xl font-bold text-white leading-relaxed max-w-2xl mx-auto italic">
+                    "Customers at Reliance Mart and Decathlon face challenges in navigating the store, understanding product information, and completing checkout efficiently, leading to confusion and frustration during the shopping journey."
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
